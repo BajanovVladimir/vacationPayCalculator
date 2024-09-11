@@ -2,9 +2,54 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <head>
     <meta charset="UTF-8"/>
-    <title>Строка</title>
+    <title>Вычисление отпускных</title>
     <link rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<section>
+    <h1>
+        Калькулятор вычисления отпускных
+    </h1>
+    <form id="calculationForm" th:action="@{/calculate}" method="post" th:object="${vacationPayDTO}">
+        <div>
+            <label>
+                Введите среднюю заработную плату за 12 месяцев
+            </label>
+            <p>
+                <input name="salary" placeholder="заработная плата" required th:field="*{salary}" th:value="*{salary}">
+            </p>
+        </div>
+        <div>
+            <label>
+                Отпуск
+            </label>
+            <p>
+                c <input type="date" th:field="*{startDate}" name="startDate" required>
+            </p>
+            <p>
+                до <input type="date"  th:field="*{stopDate}" name="stopDate" required>
+            </p>
+            <p>
+                <input type="submit" value="Вычислить">
+            </p>
+        </div>
+    </form>
+</section>
+<section>
+    <div  th:unless="${salary == NULL}">
+        <label>
+            Отпускные за
+        </label>
+        <label th:text="${numberOfDays}"></label>
+        <label> дней с </label>
+        <label th:text="${startDay}"></label>
+        <label> по </label>
+        <label th:text="${stopDay}"></label>
+        <p>
+            <label>составят: </label>
+            <label th:text="${vacationPay}"></label>
+        </p>
+    </div>
+</section>
 </body>
 </html>

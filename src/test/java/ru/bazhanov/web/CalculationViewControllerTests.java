@@ -13,14 +13,14 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
-public class CalculateViewControllerTests {
+public class CalculationViewControllerTests {
 
     @Autowired
     private WebApplicationContext context;
     private MockMvc mockMvc;
 
 
-    @BeforeEach
+   @BeforeEach
     public void setup() {
         mockMvc = MockMvcBuilders
                 .webAppContextSetup(context)

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="745f32d2-1403-450d-9913-340138e50ba0" name="Changes" comment="Added  application.properties and controller for calculationView">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/bazhanov/web/CalculateViewControllerTests.java" afterDir="false" />
+    <list default="true" id="745f32d2-1403-450d-9913-340138e50ba0" name="Changes" comment="Added  test for calculationViewController">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/models/VacationPayCalculatorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/services/VacationPayCalculatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/services/VacationPayCalculatorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/bazhanov/services/VacationPayCalculatorServiceImplTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bazhanov/web/calculateViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/web/calculationViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/calculationView.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/calculationView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/bazhanov/web/CalculateViewControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/bazhanov/web/CalculationViewControllerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +24,20 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +68,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CalculateViewControllerTests.test_that_calculateView_is_ok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculationViewControllerTests.test_that_calculateView_is_ok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -64,7 +81,99 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.bazhanov.web.CalculateViewControllerTests.test_that_calculateView_is_ok&quot;" />
+            <option value="&quot;ru.bazhanov.web.CalculationViewControllerTests.test_that_calculateView_is_ok&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_0_if_dateStop_before_dateStart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.bazhanov.services.VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_0_if_dateStop_before_dateStart&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_ok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.bazhanov.services.VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_ok&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_ok_if_dateStart_before_dateStop" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.bazhanov.services.VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_ok_if_dateStart_before_dateStop&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VacationPayCalculatorServiceImplTests.test_that_getResult_is_ok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.bazhanov.services.VacationPayCalculatorServiceImplTests.test_that_getResult_is_ok&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -76,7 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CalculateViewControllerTests.test_that_calculateView_is_ok" />
+        <item itemvalue="Gradle.VacationPayCalculatorServiceImplTests.test_that_getResult_is_ok" />
+        <item itemvalue="Gradle.VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_ok_if_dateStart_before_dateStop" />
+        <item itemvalue="Gradle.VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_0_if_dateStop_before_dateStart" />
+        <item itemvalue="Gradle.VacationPayCalculatorServiceImplTests.test_that_getNumberOfDays_is_ok" />
+        <item itemvalue="Gradle.CalculationViewControllerTests.test_that_calculateView_is_ok" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726063401475</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added  test for calculationViewController">
+      <created>1726064117218</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726064117218</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +248,7 @@
     <MESSAGE value="Initial commit. Project setup" />
     <MESSAGE value="Added calculationView.html and styles.css" />
     <MESSAGE value="Added  application.properties and controller for calculationView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  application.properties and controller for calculationView" />
+    <MESSAGE value="Added  test for calculationViewController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added  test for calculationViewController" />
   </component>
 </project>
