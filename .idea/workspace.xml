@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="745f32d2-1403-450d-9913-340138e50ba0" name="Changes" comment="Added  test for calculationViewController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/models/VacationPayCalculatorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/services/VacationPayCalculatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/services/VacationPayCalculatorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/bazhanov/services/VacationPayCalculatorServiceImplTests.java" afterDir="false" />
+    <list default="true" id="745f32d2-1403-450d-9913-340138e50ba0" name="Changes" comment="Аirst working version of vacation pay calculation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bazhanov/web/calculateViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bazhanov/web/calculationViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/calculationView.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/calculationView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/bazhanov/web/CalculateViewControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/bazhanov/web/CalculationViewControllerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726064117218</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Аirst working version of vacation pay calculation">
+      <created>1726084600953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726084600953</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +250,7 @@
     <MESSAGE value="Added calculationView.html and styles.css" />
     <MESSAGE value="Added  application.properties and controller for calculationView" />
     <MESSAGE value="Added  test for calculationViewController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  test for calculationViewController" />
+    <MESSAGE value="Аirst working version of vacation pay calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Аirst working version of vacation pay calculation" />
   </component>
 </project>

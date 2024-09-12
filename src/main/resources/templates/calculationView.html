@@ -4,19 +4,20 @@
     <meta charset="UTF-8"/>
     <title>Вычисление отпускных</title>
     <link rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
 <section>
     <h1>
         Калькулятор вычисления отпускных
     </h1>
-    <form id="calculationForm" th:action="@{/calculate}" method="post" th:object="${vacationPayDTO}">
+    <form id="calculationForm" onsubmit="return submitFunction(event)" th:action="@{/calculate}" method="post" th:object="${vacationPayDTO}">
         <div>
             <label>
                 Введите среднюю заработную плату за 12 месяцев
             </label>
             <p>
-                <input name="salary" placeholder="заработная плата" required th:field="*{salary}" th:value="*{salary}">
+                <input id="salary_input_id" name="salary" placeholder="заработная плата" required th:field="*{salary}" th:value="*{salary}">
             </p>
         </div>
         <div>
@@ -32,6 +33,7 @@
             <p>
                 <input type="submit" value="Вычислить">
             </p>
+            <div class="div_error" id="error"> </div>
         </div>
     </form>
 </section>
@@ -52,4 +54,19 @@
     </div>
 </section>
 </body>
+<script th:inline="javascript" type="text/javascript">
+           function submitFunction(e){
+              var startDate =new Date($("#startDay").val());
+              var stopDate = new Date($("#stopDay").val());
+              var salary = document.getElementById('salary_input_id');
+                   if(startDate<stopDate){
+                      return;
+                   } else {
+                        $("#error").text("выбраны ошибочные даты!");
+                     }
+              }
+             e.preventDefault();
+           }
+
+</script>
 </html>
