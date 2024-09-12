@@ -35,6 +35,9 @@
             </p>
         </div>
     </form>
+    <div class="error" th:if="${dateError}">
+        Введите корректные даты!
+    </div>
 </section>
 <section>
     <div class="error" th:if="${error}">
