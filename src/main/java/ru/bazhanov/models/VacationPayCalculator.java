@@ -2,12 +2,16 @@ package ru.bazhanov.models;
 
 import java.time.LocalDate;
 
-public class VacationPayCalculatorDTO {
+public class VacationPayCalculator {
     private Double salary;
     private LocalDate startDate;
     private LocalDate stopDate;
 
-    public VacationPayCalculatorDTO(){}
+    public VacationPayCalculator(Double salary,LocalDate startDate, LocalDate stopDate){
+        this.salary = salary;
+        this.startDate = startDate;
+        this.stopDate = stopDate;
+    }
 
     public Double getSalary() {
         return salary;

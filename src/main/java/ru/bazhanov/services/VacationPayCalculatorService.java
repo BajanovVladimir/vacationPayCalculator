@@ -1,7 +1,9 @@
 package ru.bazhanov.services;
 
-import ru.bazhanov.models.VacationPayCalculatorDTO;
+import ru.bazhanov.dto.VacationPayCalculatorDTO;
+import ru.bazhanov.models.VacationPayCalculator;
 
 public interface VacationPayCalculatorService {
-    Double getResult(VacationPayCalculatorDTO vacationPayCalculatorDTO);
+    Double getResult(VacationPayCalculator vacationPayCalculatorDTO);
+    VacationPayCalculator getModel(VacationPayCalculatorDTO vacationPayCalculatorDTO);
 }
